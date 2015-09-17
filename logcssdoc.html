@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>logistics css documentation</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/webfonts.css"/>
+    <link rel="stylesheet" type="text/less" href="assets/oi-main.less"/>
+    <link rel="stylesheet" type="text/less" href="assets/logcssdoc.less"/>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script>
+        less = {
+            env: "development",
+            async: true,
+            fileAsync: false,
+            poll: 1000,
+            functions: {},
+            dumpLineNumbers: "comments",
+            relativeUrls: true,
+            useFileCache: false,
+            rootpath: ":/localhost/"
+        };
+    </script>
+    <script src="bower_components/less.js/dist/less.js"></script>
+    <script src="debug.js"></script>
+
+    <style>
+        table td {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body class="objectinformation">
+<div class="container-fluid doc-container">
+    <div class="vgrid-l"> <!-- css-doc-left-column -->
+        <div class="row">
+            <div class="col-md-6 vgrid-l">
+                <h1>Logistics CSS Referenz</h1>
+                <h2>Zweck</h2>
+                <p>
+                    Dieses Dokument soll die wesentlichen CSS Klassen vorführen die in der Logistiscs Web Applikation
+                    verwenden werden
+                    <i>An english version of this document can be requested on demand from <a
+                            href="mailto:rklein@roseninspection.net">rklein@roseninspection.net</a></i>
+                </p>
+                <h2>
+                    Struktur des Dokuments
+                </h2>
+                <p>Hinter jedem Artikel steht ein eingerückter Bereich mit Beispielen</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 vgrid-l">
+                <h2>Grundlegende CSS-Klassen</h2>
+
+                <p>Für die Tags H1, H3,H4 ,H5 und H6 sind grundlegene Einstellungen für Schriftarten und -größen gesetzt.
+                    Zudem werden damit auch bestimme Farben und Schrifschnitte gesetzt. </p>
+
+                <p>Zu beachten ist allerdings die Regeln nur zur Anwendung kommen, wenn sie innerhalb der Klasse
+                    ".objectinformation" benutzt werden.</p>
+
+                <p>Alle Schriftarten kommen von der Familie Segoe UI</p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 vgrid-l exampleblock">
+                <div style="height:20px">&nbsp;</div>
+                <h5>Beispiel für h1-h6</h5>
+                <p>Für H1 bitte die erste Überschrift (Logistics CSS Referenz) dieses Dokumentes betrachten</p>
+                <p> </p>
+                <p> </p>
+                <pre>
+                    &lt;h2&gt;Title in H2 tag&lt;/h2&gt;
+                    &lt;h3&gt;Title in H3 tag&lt;/h3&gt;
+                    &lt;h4&gt;Title in H4 tag&lt;/h4&gt;
+                    &lt;h5&gt;Title in H5 tag&lt;/h5&gt;
+                    &lt;h6&gt;Title in H6 tag&lt;/h6&gt;
+                </pre>
+                <h2>Title in H2 tag</h2>
+                <p class="h2definition">&nbsp;</p>
+                <h3>Title in H3 tag</h3>
+                <p class="h3definition">&nbsp;</p>
+                <h4>Title in H4 tag</h4>
+                <p class="h4definition">&nbsp;</p>
+                <h5>Title in H5 tag</h5>
+                <p class="h5definition">&nbsp;</p>
+                <h6>Title in H6 tag</h6>
+                <p class="h6definition">&nbsp;</p>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6 vgrid-l">
+                <h2>Punkt vgrid Klassen</h2>
+
+                <p>Zur typographisch optimalen Darstellung von Fliesstext können alle H1-H6 Klassen sowie p innerhalb
+                    eines 20 Pixel Höhenrasters ausgerichtet werden.
+                </p>
+                <p>dazu nutzt man entweder direkt eine Klasse mit dem suffix -vgrid oder packt alle Element in eine div
+                    mit der Klasse vgrid.</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-6 vgrid-l exampleblock">
+                <div style="height:20px">&nbsp;</div>
+                <h5>Beispiel für vgrid</h5>
+                <h6>Code</h6>
+                <pre>
+                    &lt;h5 class=&quot;h5-vgrid&quot;&gt;Exmaple title for h5 vgrid&lt;/h5&gt;
+                    &lt;p class=&quot;p-vgrid&quot;&gt;Example paragraph for p-vgrid&lt;/p&gt;
+                </pre>
+                <h6>Vorschau</h6>
+                <h5 class="h5-vgrid">Title in H5 tag</h5>
+                <p class="p-vgrid">Paragraph under h5 tag</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 vgrid-l">
+                <h2>Benutzung von less Variablen für Farben und Schriftgrößen</h2>
+                <p>
+                    Wir "compilieren" unsere css Dateien aus so genannten less-dateien (siehe <a href="http://lesscss.org/" target="_blank">http://lesscss.org</a> ).
+                    Das ermöglicht es uns zentrale Angaben wie Schriftfarben und -Größen leichter wiederzuverwenden. Ausserdem lassen sich mit less Berechnungen durchführen die von reinen css dateien nicht( oder noch nicht in allen Browsern) unterstützt werden.
+                    Dabei sind die Angaben in form von zentralen Variablen in der Datei @oi-variables.less hinterlegt.
+                    Dadurch kann diesen Schriftdefinition an verschiedenen Stellen wiedervwendet werden,
+                </p>
+
+           </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 vgrid-l exampleblock">
+                <p>&nbsp;</p>
+                <h5>Beispiele für less Variablen</h5>
+                <p>Hinweis: Vor jeder variable steht <b>@oi-</b> Das <b>@</b> "bezeichnet" eine less Variable. Das <b>oi-</b> kommt von objectinformation.
+                    Dieser <b>@oi-</b> Prefix ist nötig um Konflikte mit Bootstrap less Variablen zu vermeiden (dort gibt es z.B. schon <b>@font-size-h1</b>) </p>
+
+                <h6>Auszug aus @oi-variables.less</h6>
+                <pre>
+@oi-regular-font: "Segoe UI","SegoeUI-Regular",Arial,sans-serif;
+                </pre>
+                <h6>Auszug aus @main.less</h6>
+                <pre>
+.objectinformation p {
+    font-family: @oi-regular-font;
+    font-size: @oi-font-size-base;
+    color: @oi-regular-color;
+}
+
+.objectinformation h6, .objectinformation .h6 {
+    font-family: @oi-regular-font;
+}
+                </pre>
+                <h6>Farben aus oi-variables.less</h6>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div id="oi-colorpreview">
+                    wait...
+                </div>
+                <span style="display:none">
+                <h6>Farben aus oi-variables.less</h6>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <textarea rows="10" cols="70" style="width:580px;" id="oi-variables-dump" style="overflow: scroll">
+                </textarea>
+                </span>
+                <h6>Original Inhalt der Datei oi-variables.less  <a href="http://tfs.roseninspection.net:8080/tfs/CBSWCollection/BSWEB/Logistics%20Team/_versionControl#path=%24%2FBSWEB%2FDevBranches%2FLogisticsBSWEB%2Fbsweb%2Fassets%2FobjectInformation%2Foi-variables.less&version=&fullScreen=true&_a=contents" target="_blank">original in tfs einsehen</a></h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 vgrid-l">
+                <h2>Control related classes</h2>
+
+                <p>TODO</p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 vgrid-l">
+
+                <h2>Technische Details</h2>
+
+                <p>Technische Hintergründe für die Einbindung/Benutzung der css/less Dateien</p>
+
+                <h3>Webfonts</h3>
+
+                <p>An dem oben gezeigten Beispiel von <b>@oi-regular-font</b> sieht man die Angabe <b>Segoe UI</b> und <b>Segoe-UI-Regular</b> </p>
+                <p>
+                    Die erste Angabe führt beim Internet Explorer dazu, dass die im System installierte Schrift von <b>Segoe UI</b> benutzt wird.
+                    Bei andere Browsern z.B. Chrome(=ONE Embedded) oder Systemem z.B. Smartphones/iPad kann diesen Schrift z.T. nur über sogenannte webfonts eingebunden werden.
+                    Dafür haben wir im bsweb Projket eine webfonts.less Datei , die über @font-face die Schrift Segoe UI über den Name <b>Segoe-UI-Regular</b> einbindet.
+                </p>
+                <h3>Media queries</h3>
+
+                <p>TODO</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

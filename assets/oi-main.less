@@ -1,0 +1,260 @@
+@import "oi-variables.less";
+
+
+/*less for objectpickertemplate.css*/
+
+/* objectinformation */
+/* see also oi-variables.less*/
+
+.objectinformation{
+  font-family:@oi-regular-font;
+  color:@oi-regular-color;
+}
+
+/* these are future global styles for objectinformation/logistics and can be 'theoretically' spread of all applications
+    but for now we limit these .objectinformation scope
+*/
+
+/*erase bootstrap settings */
+.objectinformation h1,.objectinformation h2,.objectinformation h3,.objectinformation h4,.objectinformation h5,.objectinformation h6{
+  margin:0px;
+  padding:0px;
+}
+.objectinformation h6, .objectinformation .h6{
+  font-weight:normal;
+}
+
+/* set core font familys */
+
+.objectinformation h1{
+  font-family: @oi-light-font;
+}
+.objectinformation h2, .objectinformation h3,.objectinformation h4,.objectinformation h5{
+  font-family: @oi-semilight-font;
+}
+.objectinformation h6, .objectinformation .h6{
+  font-family: @oi-regular-font;
+}
+.objectinformation h6 strong, .objectinformation .h6 strong{
+
+  font-weight: bold;
+}
+
+/* set core font sizes and colors */
+.objectinformation h1 {
+  font-size: @oi-font-size-h1;
+}
+.objectinformation h2 {
+  font-size: @oi-font-size-h2;
+  color: @oi-h2-title-color;
+}
+.objectinformation h3 {
+  font-size: @oi-font-size-h3 ;
+  color: @oi-regular-color;
+}
+.objectinformation h4 {
+  font-size: @oi-font-size-h4 ;
+  color: @oi-regular-color;
+}
+
+.objectinformation h5 {
+  font-size: @oi-font-size-h5;
+  color: @oi-regular-color;
+}
+.objectinformation h6, .objectinformation .h6 {
+  font-size: @oi-font-size-h6;
+  color: @oi-regular-color;
+}
+
+.objectinformation p{
+  font-family:@oi-regular-font;
+  font-size: @oi-font-size-base;
+  color: @oi-regular-color;
+}
+
+.objectinformation label, .objectinformation .oi-label{
+  font-size: 12px !important;
+  color: @oi-regular-label-color;
+  padding: 0px;
+  line-height:12px;
+}
+
+.objectinformation {
+  background-color:@oi-background-color;
+}
+/* title */
+
+
+.objectinformation h2{
+    color: @oi-primary-color-dark;
+}
+
+/*bis hier und nicht weiter*/
+
+/* und vgrid */
+
+.h6-vgrid, .vgrid h6, .vgrid .h6
+{
+  display: block;
+  font-size: @oi-font-size-h6;
+  line-height: 14px !important;
+  padding: 8px 0px 0px 0px  !important;
+  margin: 0px 0px -2px 0px  ;
+}
+
+.h5-vgrid, .vgrid h5, .vgrid .h5  {
+  padding: 15px 0px 3px 0px ;
+  margin: 0px 0px 0px 0px  ;
+}
+
+.h4-vgrid, .vgrid h4, .vgrid .h4
+{
+  display: block;
+  font-size: @oi-font-size-h4;
+  line-height: 26px ;
+  font-weight: normal  ;
+  padding-top:17px ;
+  margin-bottom: -3px ;
+}
+
+.h3-vgrid, .vgrid h3, .vgrid .h3 {
+  display: block;
+  font-size: @oi-font-size-h3;
+  line-height: 40px ;
+  font-weight: normal  ;
+  padding-top:8px ;
+  margin-bottom: -8px  ;
+}
+
+.h2-vgrid, .vgrid h2, .vgrid .h2 {
+  display: block;
+  font-size: @oi-font-size-h2;
+  line-height: 40px ;
+  font-weight: normal ;
+  padding-top:5px ;
+  margin-bottom: -5px ;
+}
+
+.h1-vgrid, .vgrid h1, .vgrid .h1 {
+  display: block;
+  font-size: @oi-font-size-h1;
+  line-height: 60px ;
+  font-weight: normal  ;
+  padding-top:10px ;
+  padding-bottom: 10px ;
+}
+
+.regular-vgrid
+{
+  display: block;
+  font-size:14px ;
+  padding-top:8px;
+  line-height: 14px  ;
+  margin-bottom: -1px;
+}
+
+.p-vgrid, .vgrid p, .vgrid .regular{
+  display: block;
+  font-size:14px ;
+  padding-top:5px;
+  line-height: 20px;
+  margin-bottom: -11px;
+}
+
+.pre-vgrid, .vgrid pre, .pre-vgrid-l, .vgrid-l pre {
+  padding: 14px 0 0 0;
+  line-height:20px;
+  margin:11px 0px -7px 0px;
+}
+
+
+.textarea-vgrid, .vgrid textarea, .textarea-vgrid-l, .vgrid-l textarea {
+  padding: 14px 0 0 0;
+  line-height:20px;
+  margin:11px 0px -7px 0px;
+}
+
+
+/*not checked*/
+.h6-vgrid-l, .vgrid-l h6, .vgrid-l .h6
+{
+  display: block;
+  font-size: @oi-font-size-h6;
+  line-height: 14px ;
+  padding: 8px 0px 0px 0px;
+  margin: 0px 0px -2px 0px;
+}
+
+.h5-vgrid-l, .vgrid-l h5, .vgrid-l .h5  {
+  padding: 13px 0px 7px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.h4-vgrid-l, .vgrid-l h4, .vgrid-l .h4
+{
+  display: block;
+  font-size: @oi-font-size-h4;
+  line-height: 26px  ;
+  font-weight: normal ;
+  padding-top:17px  ;
+  padding-bottom: 17px  ;
+}
+
+.h3-vgrid-l, .vgrid-l h3, .vgrid-l .h3 {
+  display: block;
+  font-size: @oi-font-size-h3;
+  line-height: 40px ;
+  font-weight: normal;
+  padding-top:8px ;
+  margin-bottom: -8px  ;
+}
+
+.h2-vgrid-l, .vgrid-l h2, .vgrid-l .h2 {
+  display: block;
+  font-size: @oi-font-size-h2;
+  line-height: 40px ;
+  font-weight: normal  ;
+  padding-top:5px  ;
+  padding-bottom: 15px  ;
+}
+
+.h1-vgrid-l, .vgrid-l h1, .vgrid-l .h1 {
+  display: block;
+  font-size: @oi-font-size-h1;
+  line-height: 60px  ;
+  font-weight: normal ;
+  padding-top:10px  ;
+  padding-bottom: 10px  ;
+}
+
+/*not checked*/
+.regular-vgrid-l
+{
+  display: block;
+  font-size:14px !important;
+  padding-top:8px;
+  line-height: 14px  !important;
+  margin-bottom: -1px;
+}
+
+/*not checked*/
+.p-vgrid-l, .vgrid-l p, .vgrid-l .regular{
+  display: block;
+  font-size:14px !important;
+  padding-top:5px;
+  line-height: 20px;
+  margin-bottom: -11px;
+}
+
+.pre-vgrid-l, .vgrid-l p, .vgrid-l pre {
+   
+}
+
+
+.h1definition             { &:after { content: "font-size: @{oi-font-size-h1}; font-family: Segoe UI; font-weight: lighter; (Results in Segoe UI light)"  } }
+.h2definition             { &:after { content: "color: @{oi-h2-title-color}; font-size: @{oi-font-size-h2}; font-family: Segoe UI Semilight; font-weight: normal;"  } }
+.h3definition             { &:after { content: "font-size: @{oi-font-size-h3}; font-family: Segoe UI Semilight; font-weight: normal;"  } }
+.h4definition             { &:after { content: "font-size: @{oi-font-size-h4}; font-family: Segoe UI Semilight; font-weight: normal;"  } }
+.h5definition             { &:after { content: "font-size: @{oi-font-size-h5}; font-family: Segoe UI Semilight; font-weight: normal;"  } }
+.h6definition             { &:after { content: "font-size: @{oi-font-size-h6}; font-family: Segoe UI; font-weight: normal;"  } }
+

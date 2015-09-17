@@ -1,0 +1,31 @@
+
+h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
+  color: #1F71C2;
+}
+
+.h1definition             { &:after { content: "color: @{oi-h2-title-color}; font-size: @{font-size-h1}; font-family: Segoe UI; font-weight: lighter; (Results in Segoe UI light)"  } }
+.h2definition             { &:after { content: "font-size: @{font-size-h2}; font-family: Segoe UI Semilight; font-weight: normal;"  } }
+.h3definition             { &:after { content: "font-size: @{font-size-h3}; font-family: Segoe UI Semilight; font-weight: normal;"  } }
+.h4definition             { &:after { content: "font-size: @{font-size-h4}; font-family: Segoe UI Semilight; font-weight: normal;"  } }
+.h5definition             { &:after { content: "font-size: @{font-size-h5}; font-family: Segoe UI Semilight; font-weight: normal;"  } }
+.h6definition             { &:after { content: "font-size: @{font-size-h6}; font-family: Segoe UI; font-weight: normal;"  } }
+
+
+.control-label {
+  color:@alttext-color;
+};
+
+/* emphasis */
+h1 strong,.h1 strong {
+    font-family: @font-family-sans-serif-semilight;
+}
+
+h2 strong,.h2 strong,
+h3 strong,.h3 strong,
+h4 strong,.h4 strong,
+h5 strong,.h5 strong,
+{
+  font-family: @font-family-sans-serif;
+
+}
+
